@@ -1,0 +1,154 @@
+.about {
+  max-width: $desktop-max-width;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 87px;
+  background-image: url("../img/program-paint-bg-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
+
+.about h2 {
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  margin-top: 2px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  color: $decorative-color1;
+  text-align: center;
+}
+
+.about p {
+  font-size: 17px;
+  font-weight: 400;
+  width: 50.6%;
+  margin: 0 auto;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.about__video-wrapper {
+  width: 63.69%;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.about__video-wrapper img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+}
+
+.about__play {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  left: calc(50% - 32px);
+  top: calc(50% - 40px);
+  padding: 0;
+  border-style: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 50%;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 96px;
+    height: 96px;
+    left: calc(50% - 48px);
+    top: calc(50% - 48px);
+    background: rgba(255, 255, 255, 0.32);
+    border-radius: 50%;
+  }
+
+  &:hover svg {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+  }
+
+  &:active svg {
+    fill: #f4f4f4;
+  }
+}
+
+.about__play svg {
+  position: absolute;
+  border-radius: 50%;
+  fill: $main-color;
+  top: 0;
+  left: 0;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .about {
+    background-image: url("../img/program-paint-bg-desktop@2x.png");
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .about p {
+    width: 57%;
+  }
+
+  .about__video-wrapper {
+    width: 70%;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .about {
+    padding-bottom: 45px;
+    background-size: 130%;
+    background-position: 50% 52%;
+  }
+
+  .about h2 {
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  .about p {
+    width: 90%;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+  }
+
+  .about__video-wrapper {
+    width: 100%;
+    min-height: 224px;
+    position: relative;
+  }
+
+  .about__video-wrapper img {
+    object-fit: cover;
+    max-width: initial;
+    min-height: 224px;
+  }
+
+  .about__play {
+    width: 54px;
+    height: 54px;
+    left: calc(50% - 27px);
+    top: calc(50% - 24px);
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      left: calc(50% - 40px);
+      top: calc(50% - 40px);
+    }
+  }
+
+  .about__play svg {
+    width: 100%;
+    height: 100%;
+  }
+}
