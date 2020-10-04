@@ -423,7 +423,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     var lazyloadImages;
 
-    if ('IntersectionObserver' in window) { // проверка на существование IntersectionObserver
+    if ('IntersectionObserver' in window) {
       lazyloadImages = document.querySelectorAll('.lazy');
       var imageObserver = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
@@ -461,7 +461,7 @@
             window.removeEventListener('resize', lazyload);
             window.removeEventListener('orientationChange', lazyload);
           }
-        }, 20);
+        }, 200);
       };
 
       document.addEventListener('scroll', lazyload);
