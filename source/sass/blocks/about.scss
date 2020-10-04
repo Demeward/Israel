@@ -9,6 +9,12 @@
   background-position: bottom;
 }
 
+@media (min-width: 1455px) {
+  .about {
+    padding-top: 70px;
+  }
+}
+
 .about h2 {
   font-family: "Montserrat", "Open Sans", sans-serif;
   font-size: 40px;
@@ -150,5 +156,11 @@
   .about__play svg {
     width: 100%;
     height: 100%;
+  }
+}
+
+@media (min-width: 345px) and (max-width: $mobile-max-width) {
+  .about {
+    padding-top: 45px;
   }
 }

@@ -9385,16 +9385,20 @@ var cardsSlider = document.querySelector('#cardsSlider');
 
 var resizeTimer;
 
-var cardsSwiper = new Swiper(cardsSlider, {
-    speed: 400,
-    spaceBetween: 0,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    centeredSlides: true,
-    updateOnWindowResize: true
-  });
+var settings = {
+  observer: true,
+  observeParents: true,
+  speed: 400,
+  spaceBetween: 0,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  centeredSlides: true,
+  updateOnWindowResize: true
+}
+
+var cardsSwiper = new Swiper(cardsSlider, settings);
 
   if (window.matchMedia('(min-width: 768px)').matches) {
       cardsSwiper.destroy(false, true);
@@ -9408,16 +9412,8 @@ var cardsSwiper = new Swiper(cardsSlider, {
           if (window.matchMedia('(min-width: 768px)').matches && cardsSwiper) {
             cardsSwiper.destroy(false, true);
           } else {
-            cardsSwiper = new Swiper(cardsSlider, {
-              speed: 400,
-              spaceBetween: 0,
-              pagination: {
-                el: '.swiper-pagination',
-                clickable: true
-              },
-              centeredSlides: true,
-              updateOnWindowResize: true
-            });
+            cardsSwiper.destroy(false, true);
+            cardsSwiper = new Swiper(cardsSlider, settings);
           }
 
         }, 250);

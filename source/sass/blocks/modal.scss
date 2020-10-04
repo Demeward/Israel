@@ -166,6 +166,10 @@
   background: $decorative-color2;
 }
 
+.modal input[type="checkbox"]:focus + label::before {
+  background-color: #ebebeb;
+}
+
 .modal__close {
   display: block;
   position: absolute;

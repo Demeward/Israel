@@ -22,7 +22,7 @@
   <div style="display: none">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
 <linearGradient id="paint0_linear" x1="4.21053" y1="0.457144" x2="13.147" y2="3.43295" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FFC341"></stop>
+<stop offset="0.963542" stop-color="#FFC341"></stop>
 <stop offset="0.963542" stop-color="#FFD701"></stop>
 </linearGradient>
 </defs><symbol id="sp-icon-arrow-down" viewBox="0 0 17 11">
@@ -64,14 +64,14 @@
       <h1>Учёба, путешествие и карьера для еврейской молодёжи</h1>
       <a href="#about" aria-label="Прокрутить вниз" class="intro__scroll"></a>
     </section>
-    <section class="about" id="about">
+    <section class="about lazy" id="about">
       <h2>О программе</h2>
       <p>«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут. Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле. В течение освоения программ предусмотрен грант от 4200 до 8400$.</p>
       <div class="about__video-wrapper">
         <picture>
-        <source type="image/webp" srcset="img/video@1x.webp 1x, img/video@2x.webp 2x">
+        <source type="image/webp" srcset="img/video@1x.webp 1x, img/video@2x.webp 2x" loading="lazy">
         <!-- 1x: 870px; 2x: 1740px -->
-        <img src="img/video@1x.png" srcset="img/video@2x.png 2x" alt="Превью видео" width="870" height="460">
+        <img src="img/video@1x.png" srcset="img/video@2x.png 2x" loading="lazy" alt="Превью видео" width="870" height="460">
         </picture>
         <button type="button" aria-label="Запустить видео" class="about__play">
           <svg width="64" height="64">
@@ -80,7 +80,7 @@
         </button>
       </div>
     </section>
-    <section class="programs">
+    <section class="programs lazy">
       <h2>Программы</h2>
       <div class="programs__container">
       <ul class="programs__tabs">
@@ -129,7 +129,7 @@
       </ul>
       </div>
     </section>
-    <section class="call-back">
+    <section class="call-back lazy">
       <h2>Хочу поехать!</h2>
       <p>Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!</p>
       <div class="call-back__form-inner">
@@ -141,11 +141,11 @@
       </form>
       </div>
     </section>
-    <section class="conditions">
+    <section class="conditions lazy">
       <div class="conditions__container">
       <h2>Как поехать</h2>
       <p>Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем городе. Вы получите актуальные сведения о доступных программах и городах, в которых можете пройти программу.</p>
-      <b>Чтобы иметь возможность получить грант на обучение от 4200 до 8400$, вы должны:</b>
+      <p><b>Чтобы иметь возможность получить грант на обучение от 4200 до 8400$, вы должны:</b></p>
       <ul class="conditions__list">
         <li class="conditions__item"><span>1</span>
           Быть в возрасте от 16 до 30 лет
@@ -170,41 +170,41 @@
       <div class="features__list swiper-wrapper">
         <div class="features__item features__item--active swiper-slide">
           <picture>
-          <source type="image/webp" srcset="img/life-photo-1@1x.webp 1x, img/life-photo-1@2x.webp 2x">
+          <source type="image/webp" srcset="img/life-photo-1@1x.webp 1x, img/life-photo-1@2x.webp 2x" loading="lazy">
           <!-- 1x: 482px; 2x: 964px -->
-          <img src="img/life-photo-1@1x.png" srcset="img/life-photo-1@2x.png 2x" alt="Экскурсии по Израилю и знакомство с его историей" width="482" height="732">
+          <img src="img/life-photo-1@1x.png" srcset="img/life-photo-1@2x.png 2x" loading="lazy" alt="Экскурсии по Израилю и знакомство с его историей" width="482" height="732">
           </picture>
           <p>Экскурсии по Израилю<br> и знакомство с его историей</p>
         </div>
         <div class="features__item swiper-slide">
           <picture>
-          <source type="image/webp" srcset="img/life-photo-2@1x.webp 1x, img/life-photo-2@2x.webp 2x">
+          <source type="image/webp" srcset="img/life-photo-2@1x.webp 1x, img/life-photo-2@2x.webp 2x" loading="lazy">
           <!-- 1x: 211px; 2x: 422px -->
-          <img src="img/life-photo-2@1x.png" srcset="img/life-photo-2@2x.png 2x" alt="Изучение иврита" width="211" height="318">
+          <img src="img/life-photo-2@1x.png" srcset="img/life-photo-2@2x.png 2x" alt="Изучение иврита" width="211" height="318" loading="lazy">
           </picture>
           <p>Изучение иврита</p>
         </div>
         <div class="features__item swiper-slide">
           <picture>
-          <source type="image/webp" srcset="img/life-photo-3@1x.webp 1x, img/life-photo-3@2x.webp 2x">
+          <source type="image/webp" srcset="img/life-photo-3@1x.webp 1x, img/life-photo-3@2x.webp 2x" loading="lazy">
           <!-- 1x: 411px; 2x: 822px -->
-          <img src="img/life-photo-3@1x.png" srcset="img/life-photo-3@2x.png 2x" alt="Обучение современным навыкам и профессиям" width="411" height="318">
+          <img src="img/life-photo-3@1x.png" srcset="img/life-photo-3@2x.png 2x" alt="Обучение современным навыкам и профессиям" width="411" height="318" loading="lazy">
           </picture>
           <p>Обучение современным навыкам и профессиям</p>
         </div>
         <div class="features__item swiper-slide">
           <picture>
-          <source type="image/webp" srcset="img/life-photo-4@1x.webp 1x, img/life-photo-4@2x.webp 2x">
+          <source type="image/webp" srcset="img/life-photo-4@1x.webp 1x, img/life-photo-4@2x.webp 2x" loading="lazy">
           <!-- 1x: 411px; 2x: 822px -->
-          <img src="img/life-photo-4@1x.png" srcset="img/life-photo-4@2x.png 2x" alt="Совместные творческие проекты с израильской молодёжью" width="411" height="318">
+          <img src="img/life-photo-4@1x.png" srcset="img/life-photo-4@2x.png 2x" alt="Совместные творческие проекты с израильской молодёжью" width="411" height="318" loading="lazy">
           </picture>
           <p>Совместные творческие проекты с израильской молодёжью</p>
         </div>
         <div class="features__item swiper-slide">
           <picture>
-          <source type="image/webp" srcset="img/life-photo-5@1x.webp 1x, img/life-photo-5@2x.webp 2x">
+          <source type="image/webp" srcset="img/life-photo-5@1x.webp 1x, img/life-photo-5@2x.webp 2x" loading="lazy">
           <!-- 1x: 214px; 2x: 428px -->
-          <img src="img/life-photo-5@1x.png" srcset="img/life-photo-5@2x.png 2x" alt="Развитие лидерства" width="214" height="318">
+          <img src="img/life-photo-5@1x.png" srcset="img/life-photo-5@2x.png 2x" alt="Развитие лидерства" width="214" height="318" loading="lazy">
           </picture>
           <p>Развитие лидерства</p>
         </div>
@@ -212,7 +212,7 @@
       <div class=".features__slider swiper-pagination"></div>
       </div>
     </section>
-    <section class="gallery">
+    <section class="gallery lazy">
       <div class="gallery__wrapper">
       <h2>#MASAISRAEL</h2>
       <p>Познакомьтесь с программой<br> от первого лица! Многие участники ведут блоги и фотодневники<br> о жизни, учёбе и путешествиях<br> в Израиле.</p>
@@ -223,76 +223,94 @@
       смотреть фото</a>
       </div>
     </section>
-    <section class="faq">
+    <section class="faq lazy">
       <div class="faq__container">
       <h2>Частые вопросы</h2>
       <ul class="faq__list">
-        <li class="faq__item"><span>1</span>
+        <li class="faq__item">
+          <div class="faq__inner">
+          <span>1</span>
           <h3>Кто организатор? Какие сроки у программы?</h3>
           <button type="button" class="faq__show" aria-label="Раскрыть содержимое">
             <svg width="15" height="8">
               <use xlink:href="#sp-icon-arrow-down"></use>
             </svg>
           </button>
+          </div>
           <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Маса» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
         </li>
-        <li class="faq__item"><span>2</span>
+        <li class="faq__item">
+          <div class="faq__inner">
+          <span>2</span>
           <h3>Что такое грант на обучение?</h3>
           <button type="button" class="faq__show" aria-label="Раскрыть содержимое">
             <svg width="15" height="8">
               <use xlink:href="#sp-icon-arrow-down"></use>
             </svg>
           </button>
+        </div>
           <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Маса» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
         </li>
-        <li class="faq__item faq__item--opened"><span>3</span>
+        <li class="faq__item faq__item--opened">
+          <div class="faq__inner">
+          <span>3</span>
           <h3>Как определяется стоимость программы?</h3>
           <button type="button" class="faq__show" aria-label="Раскрыть содержимое">
             <svg width="15" height="8">
               <use xlink:href="#sp-icon-arrow-down"></use>
             </svg>
           </button>
+          </div>
           <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Маса» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
         </li>
-        <li class="faq__item"><span>4</span>
+        <li class="faq__item">
+          <div class="faq__inner">
+          <span>4</span>
           <h3>Что такое грант на обучение?</h3>
           <button type="button" class="faq__show" aria-label="Раскрыть содержимое">
             <svg width="15" height="8">
               <use xlink:href="#sp-icon-arrow-down"></use>
             </svg>
           </button>
+          </div>
           <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Маса» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
         </li>
-        <li class="faq__item faq__item--fix"><span>5</span>
+        <li class="faq__item faq__item--fix">
+          <div class="faq__inner">
+          <span>5</span>
           <h3>Признаётся ли учеба в рамках проекта для дальнейшего обучения?</h3>
           <button type="button" class="faq__show" aria-label="Раскрыть содержимое">
             <svg width="15" height="8">
               <use xlink:href="#sp-icon-arrow-down"></use>
             </svg>
           </button>
+          </div>
           <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Маса» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
         </li>
-        <li class="faq__item faq__item--fix"><span>6</span>
+        <li class="faq__item faq__item--fix">
+          <div class="faq__inner">
+          <span>6</span>
           <h3>Как выглдядит полный процесс регистрации на программу «Маса»?</h3>
           <button type="button" class="faq__show" aria-label="Раскрыть содержимое">
             <svg width="15" height="8">
               <use xlink:href="#sp-icon-arrow-down"></use>
             </svg>
           </button>
+          </div>
           <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Маса» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
         </li>
       </ul>
       </div>
     </section>
-    <section class="reviews">
+    <section class="reviews lazy">
       <h2>Отзывы</h2>
       <ul class="reviews__list">
         <li class="reviews__item">
           <div class="reviews__photo-wrapper">
             <picture>
-            <source type="image/webp" srcset="img/review-photo@1x.webp 1x, img/review-photo@2x.webp 2x">
+            <source type="image/webp" srcset="img/review-photo@1x.webp 1x, img/review-photo@2x.webp 2x" loading="lazy">
             <!-- 1х: 364px; 2x: 728px -->
-            <img src="img/review-photo@1x.png" srcset="img/review-photo@2x.png 2x" alt="Фотография автора отзыва" width="364" height="480">
+            <img src="img/review-photo@1x.png" srcset="img/review-photo@2x.png 2x" alt="Фотография автора отзыва" width="364" height="480" loading="lazy">
             </picture>
           </div>
           <div class="reviews__wrapper">
@@ -326,9 +344,9 @@
         <li class="reviews__item">
           <div class="reviews__photo-wrapper">
             <picture>
-            <source type="image/webp" srcset="img/review-photo@1x.webp 1x, img/review-photo@2x.webp 2x">
+            <source type="image/webp" srcset="img/review-photo@1x.webp 1x, img/review-photo@2x.webp 2x" loading="lazy">
             <!-- 1х: 364px; 2x: 728px -->
-            <img src="img/review-photo@1x.png" srcset="img/review-photo@2x.png 2x" alt="Фотография автора отзыва" width="364" height="480">
+            <img src="img/review-photo@1x.png" srcset="img/review-photo@2x.png 2x" alt="Фотография автора отзыва" width="364" height="480" loading="lazy">
             </picture>
           </div>
           <div class="reviews__wrapper">
@@ -362,9 +380,9 @@
         <li class="reviews__item reviews__item--active">
           <div class="reviews__photo-wrapper">
             <picture>
-            <source type="image/webp" srcset="img/review-photo@1x.webp 1x, img/review-photo@2x.webp 2x">
+            <source type="image/webp" srcset="img/review-photo@1x.webp 1x, img/review-photo@2x.webp 2x" loading="lazy">
             <!-- 1х: 364px; 2x: 728px -->
-            <img src="img/review-photo@1x.png" srcset="img/review-photo@2x.png 2x" alt="Фотография автора отзыва" width="364" height="480">
+            <img src="img/review-photo@1x.png" srcset="img/review-photo@2x.png 2x" alt="Фотография автора отзыва" width="364" height="480" loading="lazy">
             </picture>
           </div>
           <div class="reviews__wrapper">
@@ -398,9 +416,9 @@
         <li class="reviews__item">
           <div class="reviews__photo-wrapper">
             <picture>
-            <source type="image/webp" srcset="img/review-photo@1x.webp 1x, img/review-photo@2x.webp 2x">
+            <source type="image/webp" srcset="img/review-photo@1x.webp 1x, img/review-photo@2x.webp 2x" loading="lazy">
             <!-- 1х: 364px; 2x: 728px -->
-            <img src="img/review-photo@1x.png" srcset="img/review-photo@2x.png 2x" alt="Фотография автора отзыва" width="364" height="480">
+            <img src="img/review-photo@1x.png" srcset="img/review-photo@2x.png 2x" alt="Фотография автора отзыва" width="364" height="480" loading="lazy">
             </picture>
           </div>
           <div class="reviews__wrapper">
@@ -434,9 +452,9 @@
         <li class="reviews__item">
           <div class="reviews__photo-wrapper">
             <picture>
-            <source type="image/webp" srcset="img/review-photo@1x.webp 1x, img/review-photo@2x.webp 2x">
+            <source type="image/webp" srcset="img/review-photo@1x.webp 1x, img/review-photo@2x.webp 2x" loading="lazy">
             <!-- 1х: 364px; 2x: 728px -->
-            <img src="img/review-photo@1x.png" srcset="img/review-photo@2x.png 2x" alt="Фотография автора отзыва" width="364" height="480">
+            <img src="img/review-photo@1x.png" srcset="img/review-photo@2x.png 2x" alt="Фотография автора отзыва" width="364" height="480" loading="lazy">
             </picture>
           </div>
           <div class="reviews__wrapper">
@@ -470,9 +488,9 @@
         <li class="reviews__item">
           <div class="reviews__photo-wrapper">
             <picture>
-            <source type="image/webp" srcset="img/review-photo@1x.webp 1x, img/review-photo@2x.webp 2x">
+            <source type="image/webp" srcset="img/review-photo@1x.webp 1x, img/review-photo@2x.webp 2x" loading="lazy">
             <!-- 1х: 364px; 2x: 728px -->
-            <img src="img/review-photo@1x.png" srcset="img/review-photo@2x.png 2x" alt="Фотография автора отзыва" width="364" height="480">
+            <img src="img/review-photo@1x.png" srcset="img/review-photo@2x.png 2x" alt="Фотография автора отзыва" width="364" height="480" loading="lazy">
             </picture>
           </div>
           <div class="reviews__wrapper">
@@ -520,7 +538,7 @@
         </div>
       </div>
     </section>
-    <section class="info">
+    <section class="info lazy">
       <div class="info__container">
       <div class="info__wrapper">
         <h2>Узнать подробности</h2>
@@ -528,9 +546,9 @@
         <div class="info__curator">
           <div class="info__photo-wrapper">
           <picture>
-          <source type="image/webp" srcset="img/curator@1x.webp 1x, img/curator@2x.webp 2x">
+          <source type="image/webp" srcset="img/curator@1x.webp 1x, img/curator@2x.webp 2x" loading="lazy">
           <!-- 1х: 112px; 2x: 224px -->
-          <img src="img/curator@1x.jpg" srcset="img/curator@2x.jpg 2x" alt="Фотография куратора" width="112" height="112">
+          <img src="img/curator@1x.jpg" srcset="img/curator@2x.jpg 2x" alt="Фотография куратора" width="112" height="112" loading="lazy">
           </picture>
           </div>
           <div class="info__curator-wrapper">
@@ -562,9 +580,9 @@
       </div>
       <div class="info__map-wrapper">
         <picture>
-        <source type="image/webp" srcset="img/map@1x.webp 1x, img/map@2x.webp 2x">
+        <source type="image/webp" srcset="img/map@1x.webp 1x, img/map@2x.webp 2x" loading="lazy">
         <!-- 1х: 702px; 2x: 1404px -->
-        <img src="img/map@1x.png" srcset="img/map@2x.png 2x" alt="Карта адреса куратора" width="702" height="448">
+        <img src="img/map@1x.png" srcset="img/map@2x.png 2x" alt="Карта адреса куратора" width="702" height="448" loading="lazy">
         </picture>
       </div>
       </div>
@@ -620,16 +638,16 @@
     <div class="modal__form-inner">
     <form action="https://echo.htmlacademy.ru" method="post">
       <label for="name-modal" class="visually-hidden">Введите ваше Имя</label>
-      <input type="text" id="name-modal" name="name" title="Используйте только буквы русского алфавита" pattern="^[А-Яа-яЁё]+$" placeholder="имя" required="">
+      <input type="text" id="name-modal" name="name" title="Используйте только буквы русского алфавита" pattern="^[А-Яа-яЁё]+$" placeholder="имя" tabindex="1" required="">
       <label for="tel-modal" class="visually-hidden">Введите ваш номер телефона</label>
-      <input type="tel" id="tel-modal" name="modal-tel" placeholder="телефон" required="">
+      <input type="tel" id="tel-modal" name="modal-tel" placeholder="телефон" tabindex="2" required="">
       <span>Ошибка: неверный формат</span>
-      <button type="submit" class="modal__send">перезвоните мне</button>
-      <input type="checkbox" name="agreed" id="agreed-data" class="visually-hidden" required="">
+      <button type="submit" class="modal__send" tabindex="4">перезвоните мне</button>
+      <input type="checkbox" name="agreed" id="agreed-data" class="visually-hidden" tabindex="3" required="">
       <label for="agreed-data">Нажимая на кнопку, вы даёте согласие на обработку персональных данных</label>
     </form>
     </div>
-    <button type="button" class="modal__close" aria-label="Закрыть окно"></button>
+    <button type="button" class="modal__close" aria-label="Закрыть окно" tabindex="5"></button>
   </section>
   <section class="modal-success">
     <h2>Заявка принята</h2>
